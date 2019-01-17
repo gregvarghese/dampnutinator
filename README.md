@@ -19,3 +19,6 @@ follow the instructions below:
 ## Notes
 The plugin works on most sites, except for Facebook. I spent a grand total of 10 min on the plugin and didn't get a chance to dig in further. 
 I would happily accept a pull request if you have a fix.
+
+1-17-2019
+V1.1 - Fix added to work on Facebook.
