@@ -39,6 +39,11 @@ function handleText(textNode)
 {
 	var v = textNode.nodeValue;
 
+	if(!name)
+	{
+		name = 'Lord Dampnut';
+	}
+
 	v = v.replace("Donald Trump", name);
 	v = v.replace("donald trump", name);
 	v = v.replace("Donald J Trump", name);
