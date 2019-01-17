@@ -17,7 +17,7 @@ follow the instructions below:
 5. Alternatively, you can drag and drop the directory where your extension files live onto chrome://extensions in your browser to load it.
 
 ## Notes
-The plugin works on most sites, except for Facebook. I spent a grand total of 10 min on the plugin and didn't get a chance to dig in further. 
+The plugin works on most sites. I spent a grand total of 10 min on the plugin and didn't get a chance to dig in further. 
 I would happily accept a pull request if you have a fix.
 
 1-17-2019
