@@ -40,8 +40,10 @@ function handleText(textNode)
 	var v = textNode.nodeValue;
 
 	v = v.replace("Donald Trump", name);
+	v = v.replace("donald trump", name);
 	v = v.replace("Donald J Trump", name);
 	v = v.replace("Donald J. Trump", name);
+	v = v.replace("Donald John Trump", name);
 	v = v.replace(/\bTrump\b/g, name);
 	v = v.replace(/\bTRUMP\b/g, name.toUpperCase());
 	v = v.replace(/\bTRUMPS\b/g, name + (name.endsWith('s'),'','s').toUpperCase());
