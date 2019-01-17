@@ -17,8 +17,30 @@ follow the instructions below:
 5. Alternatively, you can drag and drop the directory where your extension files live onto chrome://extensions in your browser to load it.
 
 ## Notes
-The plugin works on most sites. I spent a grand total of 10 min on the plugin and didn't get a chance to dig in further. 
-I would happily accept a pull request if you have a fix.
+Click on the plugin icon on your toolbar and you'll see the options button which will take you to the settings page to choose your preferred name. 
 
-1-17-2019
-V1.1 - Fix added to work on Facebook.
+New names include:
+* Lord Dampnut
+* Donnie Two Scoops
+* Cheetolini
+* Comrade Cheetolino
+* Orange Doofus
+* Angry Creamsicle
+* Donald Drumpf
+* Fascist, loofa-faced shit-gibbon
+* Fuckface von Clownstick
+* Moneydiaper McStupid
+* Tan Dump Lord
+* The Angry Cheeto
+* Commander-in-Grief
+* Crybaby Prima Donald
+* The Daft Draft Dodger
+* Der Groepenfuehrer
+* Dishonest Don
+* Donald Chump
+
+## Version History
+### 1-17-2019
+- V1.1 - Fix added to work on Facebook.
+- V1.2 - Added options screen to allow you to pick from a list of other names. Some were requested and a few were from https://www.findnicknames.com/nicknames-for-donald-trump/. 
+

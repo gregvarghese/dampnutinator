@@ -1,7 +1,13 @@
+var name;
+
+restore_options();
+
 walk(document.body);
+
 setTimeout(function () {
 	walk(document.body);
 }, 1000);
+
 
 function walk(node)
 {
@@ -33,21 +39,29 @@ function handleText(textNode)
 {
 	var v = textNode.nodeValue;
 
-	v = v.replace("Donald Trump", "Lord Dampnut");
-	v = v.replace("Donald J Trump", "Lord Dampnut");
-	v = v.replace("Donald J. Trump", "Lord Dampnut");
-	v = v.replace(/\bTrump\b/g, "Lord Dampnut");
-	v = v.replace(/\bTRUMP\b/g, "LORD DAMPNUT");
-	v = v.replace(/\bTRUMPS\b/g, "LORD DAMPNUTS");
-	v = v.replace(/\bTrumps\b/g, "Lord Dampnuts");
+	v = v.replace("Donald Trump", name);
+	v = v.replace("Donald J Trump", name);
+	v = v.replace("Donald J. Trump", name);
+	v = v.replace(/\bTrump\b/g, name);
+	v = v.replace(/\bTRUMP\b/g, name.toUpperCase());
+	v = v.replace(/\bTRUMPS\b/g, name + (name.endsWith('s'),'','s').toUpperCase());
+	v = v.replace(/\bTrumps\b/g, name + (name.endsWith('s'),'','s'));
 	v = v.replace(/\bpresident\b/g, "");
 	v = v.replace(/\bPresident\b/g, "");
-	v = v.replace(/\bdonaldjtrump\b/g, "Lord Dampnut");
-	v = v.replace(/\bdonaldtrump\b/g, "Lord Dampnut");
-	v = v.replace(/\brealdonaldtrump\b/g, "Lord Dampnut");
-	v = v.replace(/\brealDonaldTrump\b/g, "Lord Dampnut");
-	v = v.replace(/\bMake America Great Again\b/g, "Make Donald Drumpf Lord Dampnut Again");
-	v = v.replace(/\bMake America Great Again!\b/g, "Make Donald Drumpf Lord Dampnut Again!");
+	v = v.replace(/\bdonaldjtrump\b/g, name);
+	v = v.replace(/\bdonaldtrump\b/g, name);
+	v = v.replace(/\brealdonaldtrump\b/g, name);
+	v = v.replace(/\brealDonaldTrump\b/g, name);
+	v = v.replace(/\bMake America Great Again\b/g, "Make Donald Drumpf " + name + " Again");
+	v = v.replace(/\bMake America Great Again!\b/g, "Make Donald Drumpf " + name + " Again!");
 
 	textNode.nodeValue = v;
+}
+
+function restore_options() {
+  chrome.storage.sync.get({
+    favoriteName: 'Lord Dampnut'
+  }, function(items) {
+        name = items.favoriteName;
+  });
 }
