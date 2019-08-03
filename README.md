@@ -44,3 +44,5 @@ New names include:
 - V1.1 - Fix added to work on Facebook.
 - V1.2 - Added options screen to allow you to pick from a list of other names. Some were requested and a few were from https://www.findnicknames.com/nicknames-for-donald-trump/. 
 
+### 8-3-2019
+- V1.3 - Added toolbar icon from Toolbar Icon from https://icon-library.net/icon/trump-icon-2.html. 
