@@ -1,6 +1,7 @@
 # Dampnutinator Chrome Plugin
 
 ![Image of Lord Dampnut](https://pbs.twimg.com/media/C2wQDGOXcAEYgP5.jpg)
+![Image of Lord Dampnut](icon.png)
 
 Source code to a funny little Chrome plugin that replaces instances of Donald Trump to the anagram Lord Dampnut.
 100% inspired by Colin Mochrie's [tweet](https://twitter.com/colinmochrie/status/822608605434302464?lang=en).
